@@ -13,9 +13,9 @@ router.get('/', function(req, res, next) {
     return res.status(400).send('Please provide a valid non-negative number.');
   }
 
-  let y = Math.sqrt(x);
+  let y = Math.log2(x);
 
-  res.send(`Math.sqrt applied to ${x} is ${y}`);
+  res.send(`Math.log2 applied to ${x} is ${y}`);
 });
 
 module.exports = router;
